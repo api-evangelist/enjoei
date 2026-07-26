@@ -1,8 +1,24 @@
 aid: enjoei
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/enjoei.png
 name: Enjoei
-description: 'Enjoei is a company surfaced as a portfolio company of bessemer-venture-partners and added
-  to the API Evangelist network as a stub for enrichment. Sector: consumer. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: 'Enjoei is a Brazilian online marketplace (brechó) for buying and selling new and pre-owned
+  fashion, shoes, accessories, electronics, furniture, home goods, and collectibles. Founded in 2009 and
+  headquartered in Sao Paulo, it operates a peer-to-peer resale platform and mobile app ("enjuapp") that
+  connects individual sellers and buyers, handling listings, payments, shipping, and buyer/seller protection.
+  Enjoei is publicly traded on Brazil''s B3 exchange (ticker ENJU3). It was surfaced as a portfolio company
+  of Bessemer Venture Partners. No public developer API, MCP server, or SDKs were found during enrichment;
+  this profile carries the consumer-facing identity and a domain-security probe.'
 url: https://raw.githubusercontent.com/api-evangelist/enjoei/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +28,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
 - Consumer
+- Marketplace
+- E-commerce
+- Resale
+- Secondhand
+- Fashion
+- Brazil
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -25,3 +47,18 @@ maintainers:
 common:
 - type: Website
   url: https://www.enjoei.com.br/
+- type: Support
+  url: https://www.enjoei.com.br/ajuda
+- type: TermsOfService
+  url: https://www.enjoei.com.br/ajuda/sobre-o-enjoei/politica-de-privacidade-e-termos-de-uso-do-enjoei/termos-de-uso-do-enjoei
+- type: PrivacyPolicy
+  url: https://www.enjoei.com.br/politica-de-privacidade
+- type: Pricing
+  url: https://www.enjoei.com.br/l/tarifas
+- type: DomainSecurity
+  url: security/enjoei-domain-security.yml
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
